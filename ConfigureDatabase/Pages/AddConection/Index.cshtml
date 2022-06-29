@@ -1,0 +1,48 @@
+﻿@page
+@using ConfigureDatabase.Models
+@model ConfigureDatabase.Pages.AddConection.IndexModel
+@{
+    ViewData["Title"]= "Create new Conection";
+}
+
+<h1>Add Database </h1>
+
+<div class="text-center ">
+
+        <form method="post" >
+            <div>
+                <label for="adress"> Location(server adress): </label>
+                <input type="text" placeholder="192.168.1.1" asp-for="ipadress"/>
+            </div>
+            
+            <div>
+                <label>Instance Name:</label>
+                <input type="text" placeholder="Localhost" asp-for="instance"/>
+            </div>
+            
+            <div>
+                <label>Username:</label>
+                <input type="text" placeholder="Administrator" asp-for="username"/>
+            </div>
+            
+            <div>
+                <label>Password:</label>
+                <input type="password"  asp-for="password"/>
+
+            </div>
+
+            <div>
+                <label>Main Database:</label>
+                <input type="text"  placeholder="Master" asp-for="initialcatalog"/>
+            </div>
+
+            <div>
+                
+            <button asp-page-handler="OnPostSubmit()" class="btn btn-dark" value="Add Database"/>
+
+            </div>
+
+            <p>@Model.ipadress</p>
+
+        </form>
+</div>
