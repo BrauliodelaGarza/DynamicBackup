@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X9m0d8VeTbxJVN+PPctotVMXBd8gLcBJVgQB0C1vy8vBGHaOm82E8xsE0Fb4TNLXbR9ErtMTse6cqcWq15VqvA==",
+  "dgSpecHash": "qCcAeWfcIGyedsiFJcV5KuArYDQT2LccRLAhLVsv7jQHWeAx5yDsoXgxqxue+zpLizxXbfxjcd8DhuVJEYeZgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Braulio\\source\\repos\\DynamicBackup\\ConfigureDatabase\\ConfigureDatabase.csproj",
+  "projectFilePath": "C:\\Users\\Braulio\\Documents\\GitHub\\DynamicBackup\\ConfigureDatabase\\ConfigureDatabase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Braulio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Braulio\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -9,15 +9,17 @@ namespace ConfigureDatabase.Pages.AddConection
 
         [BindProperty]
         public Conections connection { get; set; } 
-        public string ipadress { get; set; }
-        public string instance { get; set; }
-        public string username { get; set; } = " ";
-        public string password { get; set; } = " ";
-        public string initialcatalog { get; set; } = " ";
 
-        public void OnPostSubmit(string ipadress)
+        public IActionResult OnPost()
         {
-            this.ipadress = ipadress;
+            if (ModelState.IsValid == false)
+            {
+                return null;
+            }
+
+
+
+            return Redirect("/AddConection");
         }
 
         public void OnGet()

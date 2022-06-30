@@ -1,48 +1,49 @@
-﻿@page
+﻿@page       
 @using ConfigureDatabase.Models
 @model ConfigureDatabase.Pages.AddConection.IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"]= "Create new Conection";
 }
 
-<h1>Add Database </h1>
 
-<div class="text-center ">
 
+<div >
+
+    <h3>Add/Edit Current Connections Configurations</h3>
         <form method="post" >
+            <div class="form">
+                <h4 class="text-center">Add Connections </h4>
             <div>
                 <label for="adress"> Location(server adress): </label>
-                <input type="text" placeholder="192.168.1.1" asp-for="ipadress"/>
+                <input required type="text" autocomplete="off" placeholder="192.168.1.1" asp-for="connection.IpAdress"/>
             </div>
             
             <div>
                 <label>Instance Name:</label>
-                <input type="text" placeholder="Localhost" asp-for="instance"/>
+                <input required type="text" autocomplete="off" placeholder="Localhost" asp-for="connection.Instance"/>
             </div>
             
             <div>
                 <label>Username:</label>
-                <input type="text" placeholder="Administrator" asp-for="username"/>
+                <input required type="text" autocomplete="off" placeholder="Administrator" asp-for="connection.Username"/>
             </div>
             
             <div>
                 <label>Password:</label>
-                <input type="password"  asp-for="password"/>
+                <input required type="password" autocomplete="off" placeholder="Password" asp-for="connection.Password"/>
 
             </div>
 
             <div>
                 <label>Main Database:</label>
-                <input type="text"  placeholder="Master" asp-for="initialcatalog"/>
+                <input required type="text" autocomplete="off" placeholder="Master" asp-for="connection.InitialCatalog"/>
             </div>
 
             <div>
-                
-            <button asp-page-handler="OnPostSubmit()" class="btn btn-dark" value="Add Database"/>
-
+                <p> </p>
+                <input style="margin-left: 50%" class="btn btn-dark" type="submit" value="Add Conection"  />
             </div>
-
-            <p>@Model.ipadress</p>
-
+            </div>
         </form>
 </div>

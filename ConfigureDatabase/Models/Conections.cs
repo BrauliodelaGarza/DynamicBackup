@@ -7,7 +7,9 @@ namespace ConfigureDatabase.Models
         [Key]
         int Id { get; set; }
         [Required]
-        public string Adress { get; set; }
+        public string IpAdress { get; set; }
+        [Required]
+        public string Instance { get; set; }    
         [Required]
         public string Username { get; set; }
         [Required]
