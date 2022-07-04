@@ -1,0 +1,39 @@
+﻿@page
+@model ConfigureDatabase.Pages.AddDatabase.IndexModel
+@{
+
+}
+
+<div >
+
+    <h3>Add/Edit Current Connections Configurations</h3>
+        <form method="post" >
+            <div class="form">
+                <h4 class="text-center">Add Connections</h4>
+            <div>
+                <label for="adress"> Connection: </label>
+                <select asp-for="database.connection">
+                   
+
+                </select>
+            </div>
+            
+            <div>
+                <label>Database Name:</label>
+                <input required type="text" autocomplete="off" placeholder="Localhost" asp-for="database.databasename"/>
+            </div>
+            
+            <div>
+                <label>Frecuency:</label>
+                <select asp-for="database.backupfrecuency">
+
+                </select>
+            </div>
+            
+            <div>
+                <p> </p>
+                <input style="margin-left: 50%" class="btn btn-dark" type="submit" value="Add Conection"  />
+            </div>
+            </div>
+        </form>
+</div>

@@ -120,3 +120,4 @@ C:\Users\Braulio\Documents\GitHub\DynamicBackup\ConfigureDatabase\obj\Debug\net6
 C:\Users\Braulio\Documents\GitHub\DynamicBackup\ConfigureDatabase\obj\Debug\net6.0\ConfigureDatabase.pdb
 C:\Users\Braulio\Documents\GitHub\DynamicBackup\ConfigureDatabase\obj\Debug\net6.0\ConfigureDatabase.genruntimeconfig.cache
 C:\Users\Braulio\Documents\GitHub\DynamicBackup\ConfigureDatabase\obj\Debug\net6.0\ref\ConfigureDatabase.dll
+C:\Users\Braulio\source\repos\DynamicBackup\ConfigureDatabase\bin\Debug\net6.0\Json\ConnectionsConfig.json
