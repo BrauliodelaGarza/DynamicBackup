@@ -1,21 +1,23 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.Data.SqlClient;
 
 namespace ConfigureDatabase.Models
 {
     public class Conections
     {
-        [Key]
+
+        [Required]
         int Id { get; set; }
         [Required]
-        public string IpAdress { get; set; }
+        public string ConnectionName { get; set; }
         [Required]
-        public string Instance { get; set; }    
-        [Required]
-        public string Username { get; set; }
-        [Required]
-        public string Password { get; set; }
-        [Required]
-        public string InitialCatalog { get; set; }
+        public SqlConnectionStringBuilder stringBuilder { get; set; }
 
+        public Conections(int id, string connectionName, SqlConnectionStringBuilder stringBuilder)
+        {
+            Id = id;
+            ConnectionName = connectionName;
+            this.stringBuilder = stringBuilder;
+        }
     }
 }

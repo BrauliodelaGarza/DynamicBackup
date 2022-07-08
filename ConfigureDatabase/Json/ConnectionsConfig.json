@@ -1,1 +1,20 @@
-﻿[]
+[
+  {
+    "ConnectionName": "asdd\\sada",
+    "stringBuilder": {
+      "Data Source": "asdd\\sada",
+      "User ID": "dasd",
+      "Password": "asda",
+      "Initial Catalog": "asdasd"
+    }
+  },
+  {
+    "ConnectionName": "dasdas\\dsadas",
+    "stringBuilder": {
+      "Data Source": "dasdas\\dsadas",
+      "User ID": "dasdas",
+      "Password": "dsadas",
+      "Initial Catalog": "dsadas"
+    }
+  }
+]

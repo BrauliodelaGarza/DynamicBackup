@@ -14,28 +14,28 @@
                 <h4 class="text-center">Add Connections</h4>
             <div>
                 <label for="adress"> Location(server adress): </label>
-                <input required type="text" autocomplete="off" placeholder="192.168.1.1" asp-for="connection.IpAdress"/>
+                <input required type="text" autocomplete="off" placeholder="192.168.1.1" asp-for="ipAdress"/>
             </div>
             
             <div>
                 <label>Instance Name:</label>
-                <input required type="text" autocomplete="off" placeholder="Localhost" asp-for="connection.Instance"/>
+                <input required type="text" autocomplete="off" placeholder="Localhost" asp-for="InstanceName"/>
             </div>
             
             <div>
                 <label>Username:</label>
-                <input required type="text" autocomplete="off" placeholder="Administrator" asp-for="connection.Username"/>
+                <input required type="text" autocomplete="off" placeholder="Administrator" asp-for="Username"/>
             </div>
             
             <div>
                 <label>Password:</label>
-                <input required type="password" autocomplete="off" placeholder="Password" asp-for="connection.Password"/>
+                <input required type="password" autocomplete="off" placeholder="Password" asp-for="Password"/>
 
             </div>
 
             <div>
                 <label>Main Database:</label>
-                <input required type="text" autocomplete="off" placeholder="Master" asp-for="connection.InitialCatalog"/>
+                <input required type="text" autocomplete="off" placeholder="Master" asp-for="InitialCatalog"/>
             </div>
 
             <div>
@@ -44,4 +44,6 @@
             </div>
             </div>
         </form>
+
+
 </div>
